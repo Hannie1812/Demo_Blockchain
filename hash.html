@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHA-256 Hash Generator</title>
+    <link rel="stylesheet" href="hash.css">
+    <!-- Thư viện CryptoJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index2.html" id="logo">
+                <img src="image/demo.png" alt="Logo" style="width: 300px; height: auto;">
+            </a>
+            <ul id="main_menu">
+                <li><a href="index2.html">Trang chủ</a></li>
+                <li><a href="hash.html">Hash</a></li>
+                <li><a href="block.html">Block</a></li>
+                <li><a href="blockchain.html">Blockchain</a></li>
+                <li><a href="distributed.html">Distributed</a></li>
+                <li><a href="token.html">Token</a></li>
+                <li><a href="coinbase.html">Coinbase</a></li>
+                <li><a href="gioithieu.html">Giới Thiệu</a></li>
+            </ul>
+            <div class="clearfix"></div> <!-- Đảm bảo các phần tử căn chỉnh đúng -->
+        </nav>
+    </header>
+
+    <!-- Nội dung chính -->
+    <main class="container">
+        <h1>SHA-256 Hash Generator</h1>
+        <div class="form-group">
+            <label for="inputData">Nhập dữ liệu:</label>
+            <textarea id="inputData" placeholder="Nhập dữ liệu..." rows="4" required oninput="generateHash()"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="hashOutput">Hash:</label>
+            <input type="text" id="hashOutput" readonly placeholder="Mã băm sẽ hiển thị tại đây...">
+        </div>
+        <div id="message" class="message"></div> <!-- Thông báo cho người dùng -->
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="row textCenter colorf">
+            @2024 Bản quyền thuộc về Phạm Cao Chí Thành, Ngô Bích Hằng.
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="hash.js"></script>
+</body>
+
+</html>

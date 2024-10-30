@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Demo</title>
+    <link rel="stylesheet" href="blockchain.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index2.html" id="logo">
+                <img src="image/demo.png" alt="Logo" style="width: 300px; height: auto;">
+            </a>
+            <ul id="main_menu">
+                <li><a href="index2.html">Trang chủ</a></li>
+                <li><a href="hash.html">Hash</a></li>
+                <li><a href="block.html">Block</a></li>
+                <li><a href="blockchain.html">Blockchain</a></li>
+                <li><a href="distributed.html">Distributed</a></li>
+                <li><a href="token.html">Token</a></li>
+                <li><a href="coinbase.html">Coinbase</a></li>
+                <li><a href="gioithieu.html">Giới Thiệu</a></li>
+            </ul>
+            <div class="clearfix"></div> <!-- Đảm bảo các phần tử căn chỉnh đúng -->
+        </nav>
+    </header>
+    <h2> Blockchain </h2>
+    <div class="container">
+
+        <!-- Block 1 -->
+        <div class="block" id="block1">
+            <h3>Block 1</h3>
+            <div class="form-group">
+                <label for="blockNumber1">Block Number:</label>
+                <input type="number" id="blockNumber1" value="1" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="nonce1">Nonce:</label>
+                <input type="number" id="nonce1" value="0">
+            </div>
+
+            <div class="form-group">
+                <label for="data1">Data:</label>
+                <textarea id="data1" rows="2" placeholder="Nhập dữ liệu của block tại đây..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="previousHash1">Previous Hash:</label>
+                <input type="text" id="previousHash1" value="0000000000000000" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="hash1">Hash:</label>
+                <input type="text" id="hash1" readonly>
+            </div>
+
+            <button type="button" id="mineButton1" class="button">Mine</button>
+        </div>
+
+        <!-- Block 2 -->
+        <div class="block" id="block2">
+            <h3>Block 2</h3>
+            <div class="form-group">
+                <label for="blockNumber2">Block Number:</label>
+                <input type="number" id="blockNumber2" value="2" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="nonce2">Nonce:</label>
+                <input type="number" id="nonce2" value="0">
+            </div>
+
+            <div class="form-group">
+                <label for="data2">Data:</label>
+                <textarea id="data2" rows="2" placeholder="Nhập dữ liệu của block tại đây..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="previousHash2">Previous Hash:</label>
+                <input type="text" id="previousHash2" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="hash2">Hash:</label>
+                <input type="text" id="hash2" readonly>
+            </div>
+
+            <button type="button" id="mineButton2" class="button">Mine</button>
+        </div>
+
+        <!-- Block 3 -->
+        <div class="block" id="block3">
+            <h3>Block 3</h3>
+            <div class="form-group">
+                <label for="blockNumber3">Block Number:</label>
+                <input type="number" id="blockNumber3" value="3" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="nonce3">Nonce:</label>
+                <input type="number" id="nonce3" value="0">
+            </div>
+
+            <div class="form-group">
+                <label for="data3">Data:</label>
+                <textarea id="data3" rows="2" placeholder="Nhập dữ liệu của block tại đây..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="previousHash3">Previous Hash:</label>
+                <input type="text" id="previousHash3" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="hash3">Hash:</label>
+                <input type="text" id="hash3" readonly>
+            </div>
+
+            <button type="button" id="mineButton3" class="button">Mine</button>
+        </div>
+
+        <!-- Block 4 -->
+        <div class="block" id="block4">
+            <h3>Block 4</h3>
+            <div class="form-group">
+                <label for="blockNumber4">Block Number:</label>
+                <input type="number" id="blockNumber4" value="4" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="nonce4">Nonce:</label>
+                <input type="number" id="nonce4" value="0">
+            </div>
+
+            <div class="form-group">
+                <label for="data4">Data:</label>
+                <textarea id="data4" rows="2" placeholder="Nhập dữ liệu của block tại đây..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="previousHash4">Previous Hash:</label>
+                <input type="text" id="previousHash4" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="hash4">Hash:</label>
+                <input type="text" id="hash4" readonly>
+            </div>
+
+            <button type="button" id="mineButton4" class="button">Mine</button>
+        </div>
+
+        <!-- Block 5 -->
+        <div class="block" id="block5">
+            <h3>Block 5</h3>
+            <div class="form-group">
+                <label for="blockNumber5">Block Number:</label>
+                <input type="number" id="blockNumber5" value="5" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="nonce5">Nonce:</label>
+                <input type="number" id="nonce5" value="0">
+            </div>
+
+            <div class="form-group">
+                <label for="data5">Data:</label>
+                <textarea id="data5" rows="2" placeholder="Nhập dữ liệu của block tại đây..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="previousHash5">Previous Hash:</label>
+                <input type="text" id="previousHash5" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="hash5">Hash:</label>
+                <input type="text" id="hash5" readonly>
+            </div>
+
+            <button type="button" id="mineButton5" class="button">Mine</button>
+        </div>
+
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="row textCenter colorf">
+            @2024 Bản quyền thuộc về Phạm Cao Chí Thành, Ngô Bích Hằng.
+        </div>
+    </footer>
+
+    <script src="blockchain.js"></script>
+</body>
+
+</html>

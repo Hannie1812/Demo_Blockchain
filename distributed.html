@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distributed Blockchain</title>
+    <link rel="stylesheet" href="distributed.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index2.html" id="logo">
+                <img src="image/demo.png" alt="Logo" style="width: 300px; height: auto;">
+            </a>
+            <ul id="main_menu">
+                <li><a href="index2.html">Trang chủ</a></li>
+                <li><a href="hash.html">Hash</a></li>
+                <li><a href="block.html">Block</a></li>
+                <li><a href="blockchain.html">Blockchain</a></li>
+                <li><a href="distributed.html">Distributed</a></li>
+                <li><a href="token.html">Token</a></li>
+                <li><a href="coinbase.html">Coinbase</a></li>
+                <li><a href="gioithieu.html">Giới Thiệu</a></li>
+            </ul>
+            <div class="clearfix"></div> <!-- Đảm bảo các phần tử căn chỉnh đúng -->
+        </nav>
+    </header>
+
+    <div>
+        <!-- Peer A -->
+        <h2>Người A</h2>
+        <div class="peer">
+            <div class="container">
+                <div id="blockA1" class="block"></div>
+                <div id="blockA2" class="block"></div>
+                <div id="blockA3" class="block"></div>
+                <div id="blockA4" class="block"></div>
+                <div id="blockA5" class="block"></div>
+            </div>
+        </div>
+
+        <!-- Peer B -->
+        <h2>Người B</h2>
+        <div class="peer">
+            <div class="container">
+                <div id="blockB1" class="block"></div>
+                <div id="blockB2" class="block"></div>
+                <div id="blockB3" class="block"></div>
+                <div id="blockB4" class="block"></div>
+                <div id="blockB5" class="block"></div>
+            </div>
+        </div>
+
+        <!-- Peer C -->
+        <h2>Người C</h2>
+        <div class="peer">
+            <div class="container">
+                <div id="blockC1" class="block"></div>
+                <div id="blockC2" class="block"></div>
+                <div id="blockC3" class="block"></div>
+                <div id="blockC4" class="block"></div>
+                <div id="blockC5" class="block"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="row textCenter colorf">
+            @2024 Bản quyền thuộc về Phạm Cao Chí Thành, Ngô Bích Hằng.
+        </div>
+    </footer>
+
+    <script src="distributed.js"></script>
+</body>
+</html>
